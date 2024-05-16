@@ -24,9 +24,7 @@ const ProjectCard = ({
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
       } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
-      whileHover={{ scale: 1.05 }}
-      onHoverStart={() => handleClick(id)}
-      onHoverEnd={() => handleClick(null)}
+      onClick={() => handleClick(id)}
     >
       <div
         className="absolute top-0 left-0 z-10 bg-jetLight 
@@ -121,11 +119,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState(null);
-
-  const handleClick = (id) => {
-    setActive(id);
-  };
+  const [active, setActive] = useState("project-2");
 
   return (
     <div className="-mt-[6rem]">
@@ -162,7 +156,7 @@ const Projects = () => {
               index={index}
               {...project}
               active={active}
-              handleClick={handleClick}
+              handleClick={setActive}
             />
           ))}
         </div>

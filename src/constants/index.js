@@ -177,25 +177,24 @@ const projects = [
   },
   {
     id: "project-2",
-    name: "Kingkos Mobile",
-    description:
-      "Efficient mobile app for searching and booking boarding room (kosan)",
+    name: "Energi Nusantara",
+    description: `An online portal for supporting solar energy development`,
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "supabase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: kingkosMobile,
-    repo: "https://github.com/Bamz666/kingkos-mobile",
+    image: energiNusantara,
+    repo: "https://github.com/gusxdev/energi-nusantara",
     demo: "/",
   },
   {
@@ -223,24 +222,25 @@ const projects = [
   },
   {
     id: "project-4",
-    name: "Energi Nusantara",
-    description: `An online portal for supporting solar energy development`,
+    name: "Kingkos Mobile",
+    description:
+      "Efficient mobile app for searching and booking boarding room (kosan)",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: energiNusantara,
-    repo: "https://github.com/gusxdev/energi-nusantara",
+    image: kingkosMobile,
+    repo: "https://github.com/Bamz666/kingkos-mobile",
     demo: "/",
   },
   {
